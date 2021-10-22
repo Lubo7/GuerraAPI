@@ -14,9 +14,9 @@ EstadoController.getById = (req, res) => {
 
 EstadoController.create = (req, res) => {
     const id = req.body.id;
-    const fecha_inicio = req.body.fecha_inicio;
-    const fecha_fin = req.body.fecha_fin;
-    const estado = {id, fecha_inicio, fecha_fin};
+    const id_pais = req.body.id_pais;
+    const id_ind = req.body.id_ind;
+    const estado = {id, id_pais, id_ind};
     res.json(indipendencia.post(estado));
 };
 
