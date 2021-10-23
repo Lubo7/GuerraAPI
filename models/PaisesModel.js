@@ -12,7 +12,7 @@ PaisesModel.findById = (id) => paises.find(arr => arr.id == id);
 PaisesModel.post = (newArr) => {
     paises.push(newArr);
     return newArr;
-}
+};
 
 //UPDATE
 PaisesModel.update = (newArr) => {
@@ -20,13 +20,13 @@ PaisesModel.update = (newArr) => {
     temp.push(newArr);
     paises = temp;
     return newArr;
-}
+};
 
 //DELETE
 PaisesModel.delete = (id) => {
     let temp = paises.filter(arr => arr.id != id);
     paises = temp;
     return `Registro ${id} eliminado correctamente`
-}
+};
 
 module.exports = PaisesModel;

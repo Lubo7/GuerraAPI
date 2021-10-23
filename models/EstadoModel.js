@@ -12,7 +12,7 @@ EstadoModel.findById = (id) => estado.find(arr => arr.id == id);
 EstadoModel.post = (newArr) => {
     estado.push(newArr);
     return newArr;
-}
+};
 
 //UPDATE
 EstadoModel.update = (newArr) => {
@@ -20,13 +20,13 @@ EstadoModel.update = (newArr) => {
     temp.push(newArr);
     estado = temp;
     return newArr;
-}
+};
 
 //DELETE
 EstadoModel.delete = (id) => {
     let temp = estado.filter(arr => arr.id != id);
     estado = temp;
     return `Registro ${id} eliminado correctamente`
-}
+};
 
 module.exports = EstadoModel;

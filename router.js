@@ -13,7 +13,7 @@ const IndependenciaRouter = require('./views/IndependenciaRouter');
 router.use('/independencia', IndependenciaRouter);
 
 const PaisesRouter = require('./views/PaisesRouter');
-router.use('/empleados', PaisesRouter);
+router.use('/paises', PaisesRouter);
 
 const ParticipacionRouter = require('./views/ParticipacionRouter');
 router.use('/participacion', ParticipacionRouter);

@@ -1,32 +1,32 @@
 let guerra = require('../data/guerra');
 
-guerraModel = {};
+GuerraModel = {};
 
 //CRUD
-guerraModel.findAll = () => guerra;
+GuerraModel.findAll = () => guerra;
 
 //READ
-guerraModel.findById = (id) => guerra.find(arr => arr.id == id);
+GuerraModel.findById = (id) => guerra.find(arr => arr.id == id);
 
 //CREATE
-guerraModel.post = (newArr) => {
+GuerraModel.post = (newArr) => {
     guerra.push(newArr);
     return newArr;
-}
+};
 
 //UPDATE
-guerraModel.update = (newArr) => {
+GuerraModel.update = (newArr) => {
     let temp = guerra.filter(arr => arr.id != newArr.id);
     temp.push(newArr);
     guerra = temp;
     return newArr;
-}
+};
 
 //DELETE
-guerraModel.delete = (id) => {
+GuerraModel.delete = (id) => {
     let temp = guerra.filter(arr => arr.id != id);
     guerra = temp;
     return `Registro ${id} eliminado correctamente`
-}
+};
 
 module.exports = GuerraModel;

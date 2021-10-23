@@ -15,7 +15,7 @@ PaisesController.getById = (req, res) => {
 PaisesController.create = (req, res) => {
     const id = req.body.id;
     const nombre = req.body.nombre;
-    const id_bando = req.body.bando;
+    const id_bando = req.body.id_bando;
     const pais = {id, nombre, id_bando};
     res.json(paises.post(pais));
 };

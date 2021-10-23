@@ -12,7 +12,7 @@ ParticipacionModel.findById = (id) => participacion.find(arr => arr.id == id);
 ParticipacionModel.post = (newArr) => {
     participacion.push(newArr);
     return newArr;
-}
+};
 
 //UPDATE
 ParticipacionModel.update = (newArr) => {
@@ -20,13 +20,13 @@ ParticipacionModel.update = (newArr) => {
     temp.push(newArr);
     participacion = temp;
     return newArr;
-}
+};
 
 //DELETE
 ParticipacionModel.delete = (id) => {
     let temp = participacion.filter(arr => arr.id != id);
     participacion = temp;
     return `Registro ${id} eliminado correctamente`
-}
+};
 
 module.exports = ParticipacionModel;

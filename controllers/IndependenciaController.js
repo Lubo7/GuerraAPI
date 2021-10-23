@@ -1,5 +1,5 @@
 //Importo modelo de datos
-const indipendencia = require('../models/IndipendenciasModel');
+const indipendencia = require('../models/IndependenciaModel');
 
 const IndependenciaController = {};
 

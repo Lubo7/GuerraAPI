@@ -1,5 +1,5 @@
 //Importo modelo de datos
-const guerras = require('../models/ParticipacionModel');
+const participacion = require('../models/ParticipacionModel');
 
 const ParticipacionController = {};
 
