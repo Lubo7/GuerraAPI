@@ -23,12 +23,12 @@ ParticipacionController.create = (req, res) => {
 ParticipacionController.update = (req, res) => {
     const id = req.params.id;
     const body = req.body;
-    res.json(ParticipacionModel.update({id, ...body}));
+    res.json(participacion.update({id, ...body}));
 };
 
 ParticipacionController.delete = (req, res) => {
     const {id} = req.params;
-    res.json(ParticipacionModel.delete(id));
+    res.json(participacion.delete(id));
 };
 
 module.exports = ParticipacionController;

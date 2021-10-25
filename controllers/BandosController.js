@@ -22,12 +22,12 @@ BandosController.create = (req, res) => {
 BandosController.update = (req, res) => {
     const id = req.params.id;
     const body = req.body;
-    res.json(BandosModel.update({id, ...body}));
+    res.json(bandos.update({id, ...body}));
 };
 
 BandosController.delete = (req, res) => {
     const {id} = req.params;
-    res.json(BandosModel.delete(id));
+    res.json(bandos.delete(id));
 };
 
 module.exports = BandosController;

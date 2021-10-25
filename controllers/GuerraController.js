@@ -24,12 +24,12 @@ GuerraController.create = (req, res) => {
 GuerraController.update = (req, res) => {
     const id = req.params.id;
     const body = req.body;
-    res.json(GuerraModel.update({id, ...body}));
+    res.json(guerras.update({id, ...body}));
 };
 
 GuerraController.delete = (req, res) => {
     const {id} = req.params;
-    res.json(GuerraModel.delete(id));
+    res.json(guerras.delete(id));
 };
 
 module.exports = GuerraController;

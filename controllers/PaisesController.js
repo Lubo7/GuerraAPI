@@ -23,12 +23,12 @@ PaisesController.create = (req, res) => {
 PaisesController.update = (req, res) => {
     const id = req.params.id;
     const body = req.body;
-    res.json(PaisesModel.update({id, ...body}));
+    res.json(paises.update({id, ...body}));
 };
 
 PaisesController.delete = (req, res) => {
     const {id} = req.params;
-    res.json(PaisesModel.delete(id));
+    res.json(paises.delete(id));
 };
 
 module.exports = PaisesController;
