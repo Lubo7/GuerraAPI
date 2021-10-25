@@ -32,7 +32,7 @@ module.exports = {
         nombre: 'Negro',
         createdAt: new Date(),
         updatedAt: new Date()
-      },
+      }
       
     ], {});
     

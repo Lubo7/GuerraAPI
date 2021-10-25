@@ -51,7 +51,7 @@ module.exports = {
         id_bando: 3,
         createdAt: new Date(),
         updatedAt: new Date()
-      },
+      }
     ], {});
     
   },

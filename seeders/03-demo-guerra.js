@@ -26,7 +26,7 @@ module.exports = {
       fecha_fin: "2323-09-09",
       createdAt: new Date(),
       updatedAt: new Date()
-    },
+    }
     
   ], {});
   
