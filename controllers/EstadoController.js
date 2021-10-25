@@ -4,12 +4,12 @@ const Estado = require('../models/EstadoModel');
 const EstadoController = {};
 
 EstadoController.getAll = (req, res) => {
-    res.json(indipendencia.findAll());
+    res.json(independencia.findAll());
 };
 
 EstadoController.getById = (req, res) => {
     const id = req.params.id;
-    res.json(indipendencia.findById(id));
+    res.json(independencia.findById(id));
 }
 
 EstadoController.create = (req, res) => {
@@ -17,7 +17,7 @@ EstadoController.create = (req, res) => {
     const id_pais = req.body.id_pais;
     const id_ind = req.body.id_ind;
     const estado = {id, id_pais, id_ind};
-    res.json(indipendencia.post(estado));
+    res.json(independencia.post(estado));
 };
 
 EstadoController.update = (req, res) => {

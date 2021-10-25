@@ -1,5 +1,5 @@
 //Importo modelo de datos
-const indipendencia = require('../models/IndependenciaModel');
+const Independencia = require('../models/IndependenciaModel');
 
 const IndependenciaController = {};
 
@@ -18,7 +18,7 @@ IndependenciaController.create = (req, res) => {
     const fecha_inicio = req.body.fech_inicio;
     const fecha_fin = req.body.fecha_fin;
     const indipendencia = {id, estado, fecha_inicio, fecha_fin};
-    res.json(guerras.post(indipendencia));
+    res.json(guerras.post(Independencia));
 };
 
 IndependenciaController.update = (req, res) => {
@@ -29,7 +29,7 @@ IndependenciaController.update = (req, res) => {
 
 IndependenciaController.delete = (req, res) => {
     const {id} = req.params;
-    res.json(IndipendenciaModel.delete(id));
+    res.json(IndependenciaModel.delete(id));
 };
 
 module.exports = IndependenciaController;
