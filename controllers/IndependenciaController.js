@@ -1,5 +1,7 @@
 //Importo modelo de datos
-const independencia = require('../models/IndependenciaModel');
+const db = require("../models");
+const bandos = db.independencia;
+const Op = db.Sequelize.Op;
 
 const IndependenciaController = {};
 

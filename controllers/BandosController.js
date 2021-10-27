@@ -1,5 +1,7 @@
 //Importo modelo de datos
-const bandos = require('../models/BandosModel');
+const db = require("../models");
+const bandos = db.bando;
+const Op = db.Sequelize.Op;
 
 const BandosController = {};
 

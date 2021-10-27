@@ -1,5 +1,7 @@
 //Importo modelo de datos
-const estado = require('../models/EstadoModel');
+const db = require("../models");
+const bandos = db.estado;
+const Op = db.Sequelize.Op;
 
 const EstadoController = {};
 

@@ -1,5 +1,7 @@
 //Importo modelo de datos
-const participacion = require('../models/ParticipacionModel');
+const db = require("../models");
+const bandos = db.participacion;
+const Op = db.Sequelize.Op;
 
 const ParticipacionController = {};
 

@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
+    "username": "remote",
+    "password": "5118Siempre",
     "database": "database_development",
-    "host": "127.0.0.1",
+    "host": "192.168.117.142",
     "port": 3306,
     "dialect": "mysql"
   },
@@ -15,10 +15,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
+    "username": "remote",
     "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "database": "database_development",
+    "host": "192.168.117.142",
+    "port": 3306,
     "dialect": "mysql"
   }
 }

@@ -1,5 +1,7 @@
 //Importo modelo de datos
-const guerras = require('../models/GuerraModel');
+const db = require("../models");
+const bandos = db.guerra;
+const Op = db.Sequelize.Op;
 
 const GuerraController = {};
 
