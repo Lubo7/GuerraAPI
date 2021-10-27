@@ -3,7 +3,7 @@
     "username": "remote",
     "password": "5118Siempre",
     "database": "database_development",
-    "host": "192.168.117.142",
+    "host": "172.16.8.224",
     "port": 3306,
     "dialect": "mysql"
   },
@@ -18,7 +18,7 @@
     "username": "remote",
     "password": null,
     "database": "database_development",
-    "host": "192.168.117.142",
+    "host": "172.16.8.224",
     "port": 3306,
     "dialect": "mysql"
   }
